@@ -23,7 +23,7 @@ peline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo './jenkins/deploy/deploy.sh'
+                sh './jenkins/deploy/deploy.sh'
             }
         }
     }
