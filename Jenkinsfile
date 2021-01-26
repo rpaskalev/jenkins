@@ -1,6 +1,6 @@
 
 pipeline {
-    agent any
+    agent maven
     environment {
       PASS = credentials('registry-pass')
 }
