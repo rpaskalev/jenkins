@@ -1,11 +1,11 @@
-
+RADY
 pipeline {
     agent maven
     environment {
       PASS = credentials('registry-pass')
 }
     stages {
-        stage('Build') {
+        stage('test') {
             steps {
 		sh '''
 	              ./jenkins/build/mvn.sh mvn -B -DskipTests clean package
